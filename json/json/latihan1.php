@@ -13,7 +13,6 @@
 //  ]
 //];
 // coba commit dulu
-// coba lagi
 
 $dbh = new PDO('mysql:host=localhost;dbname=mahasiswa', 'root', '');
 $db = $dbh->prepare('SELECT * FROM mahasiswa');
