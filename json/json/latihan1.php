@@ -12,6 +12,7 @@
 //      "email" => "yogigumilar@gmail.com"
 //  ]
 //];
+// coba commit
 
 $dbh = new PDO('mysql:host=localhost;dbname=mahasiswa', 'root', '');
 $db = $dbh->prepare('SELECT * FROM mahasiswa');
