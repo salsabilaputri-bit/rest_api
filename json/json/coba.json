@@ -1,0 +1,24 @@
+[
+    { 
+    "nama" : "salsa",
+    "umur" : 21,
+    "nim" : "2217020024",
+    "lulus" : true,
+    "hobby" : ["membaca", "memasak"],
+    "pembimbing" : {
+        "pembimbing1": "Raju Wandira",
+        "pembimbing2" : "Syaflan"
+    }
+},
+ { 
+    "nama" : "salsa",
+    "umur" : 21,
+    "nim" : "2217020024",
+    "lulus" : true,
+    "hobby" : ["membaca", "memasak"],
+    "pembimbing" : {
+        "pembimbing1": "Raju Wandira",
+        "pembimbing2" : "Syaflan"
+    }
+}
+]
