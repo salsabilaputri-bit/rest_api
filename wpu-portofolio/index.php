@@ -69,19 +69,44 @@
     </section>
 
     <!-- Youtube & IG -->
-     <section class="social" id="social">
+     <section class="social bg-light" id="social">
         <div class="container">
-          <div class="row">
+          <div class="row pt-4 mb-4">
             <div class="col text-center">
               <h2>Social Media</h2>
             </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-md-5">
+              <div class="row">
+                <div class="col-md-4">
+                 <img src="img/profile1.png" width="200" class="rounded-circle img-thumbnail"> 
+                </div>
+                <div class="col-md-8">
+                  <h5>WebProgrammingUNPAS</h5>
+                  <p>951000 Subsribers</p>
+                </div>
+              </div>
+              <div class="row mt-3 pb-3">
+                <div class="col">
+                <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" 
+                src="https://www.youtube.com/embed/ye1FKPufftw?rel=0" 
+                allowfullscreen></iframe>
+                </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5"></div>
           </div>
         </div>
      </section>
 
 
     <!-- Portfolio -->
-    <section class="portfolio bg-light" id="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="row pt-4 mb-4">
           <div class="col text-center">
@@ -150,7 +175,7 @@
 
 
     <!-- Contact -->
-    <section class="contact" id="contact">
+    <section class="contact bg-light" id="contact">
       <div class="container">
         <div class="row pt-4 mb-4">
           <div class="col text-center">
