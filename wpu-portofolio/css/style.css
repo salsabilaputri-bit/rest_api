@@ -25,3 +25,19 @@ footer {
 .ig-thumbnail img{
     width: 100px;
 }
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card .card-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card .btn {
+  margin-top: auto;
+}

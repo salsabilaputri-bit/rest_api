@@ -81,6 +81,9 @@ $gambar6 = $resultGambar6 ['media_url'];
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#social-media">Social Media</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
           </ul>
@@ -120,7 +123,7 @@ $gambar6 = $resultGambar6 ['media_url'];
     </section>
 
     <!-- Youtube & IG -->
-     <section class="social bg-light" id="social">
+     <section class="social bg-light" id="social-media">
         <div class="container">
           <div class="row pt-4 mb-4">
             <div class="col text-center">
@@ -193,72 +196,41 @@ $gambar6 = $resultGambar6 ['media_url'];
 
 
     <!-- Portfolio -->
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <div class="row pt-4 mb-4">
-          <div class="col text-center">
-            <h2>Portfolio</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/1.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/2.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/3.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>   
-        </div>
-
-        <div class="row">
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/4.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div> 
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/5.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/6.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="row pt-4 mb-4">
+      <div class="col text-center">
+        <h2>Portfolio</h2>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Project WPU Movie -->
+      <div class="col-12 col-md-6 mb-4 d-flex">
+        <div class="card project-card h-100">
+          <img class="card-img-top" src="img/thumbs/2.png" alt="Card image cap">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">WPU Movie</h5>
+            <p class="card-text">Website pencarian film menggunakan OMDb API. Dibuat dengan PHP native dan Bootstrap.</p>
+            <a href="http://localhost/rest_api/wpu-movie/" target="_blank" class="btn btn-secondary mt-auto">View Project</a>
           </div>
         </div>
       </div>
-    </section>
+      
+      <!-- Project WPU Hut -->
+      <div class="col-12 col-md-6 mb-4 d-flex">
+        <div class="card project-card h-100">
+          <img class="card-img-top" src="img/thumbs/3.png" alt="Card image cap">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">WPU Hut</h5>
+            <p class="card-text">Website pizza untuk melihat menu dengan PHP.</p>
+            <a href="http://localhost/rest_api/wpu-hut/latihan1.php" target="_blank" class="btn btn-secondary mt-auto">View Project</a>
+          </div>
+        </div>
+      </div>   
+    </div>
+  </div>
+</section>
+
 
 
     <!-- Contact -->
@@ -282,7 +254,7 @@ $gambar6 = $resultGambar6 ['media_url'];
             <ul class="list-group mb-4">
               <li class="list-group-item"><h3>Location</h3></li>
               <li class="list-group-item">My Home</li>
-              <li class="list-group-item">Komplek Wahana Kuranjia</li>
+              <li class="list-group-item">Komplek Wahana Kuranji</li>
               <li class="list-group-item">Padang, Indonesia</li>
             </ul>
           </div>
