@@ -92,19 +92,19 @@ $gambar6 = $resultGambar6 ['media_url'];
     </nav>
 
 
-    <div class="jumbotron" id="home">
-      <div class="container">
-        <div class="text-center">
-          <img src="img/salsa.jpg" class="rounded-circle img-thumbnail">
-          <h1 class="display-4">Salsabila Putri</h1>
-          <h3 class="lead">IT Student</h3>
-        </div>
-      </div>
+    <section id="home" class="bg-pink-lighter py-5">
+  <div class="container">
+    <div class="text-center">
+      <img src="img/salsa.jpg" class="rounded-circle img-thumbnail mb-3" alt="Salsabila Putri" width="200" height="200">
+      <h1 class="display-4">Salsabila Putri</h1>
+      <h3 class="lead">IT Student</h3>
     </div>
+  </div>
+</section>
 
 
     <!-- About -->
-    <section class="about" id="about">
+    <section class="about bg-light" id="about">
       <div class="container">
         <div class="row mb-4">
           <div class="col text-center">
@@ -123,7 +123,7 @@ $gambar6 = $resultGambar6 ['media_url'];
     </section>
 
     <!-- Youtube & IG -->
-     <section class="social bg-light" id="social-media">
+     <section class="social bg-pink-lighter" id="social-media">
         <div class="container">
           <div class="row pt-4 mb-4">
             <div class="col text-center">
@@ -196,7 +196,7 @@ $gambar6 = $resultGambar6 ['media_url'];
 
 
     <!-- Portfolio -->
-<section class="portfolio" id="portfolio">
+<section class="portfolio bg-light" id="portfolio">
   <div class="container">
     <div class="row pt-4 mb-4">
       <div class="col text-center">

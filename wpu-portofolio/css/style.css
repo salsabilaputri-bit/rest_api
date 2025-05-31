@@ -41,3 +41,7 @@ footer {
 .project-card .btn {
   margin-top: auto;
 }
+
+.bg-pink-lighter {
+  background-color: #f8bbd0;
+}
