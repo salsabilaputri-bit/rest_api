@@ -23,6 +23,30 @@ $urlLatestVideo = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyCRxWs-
 $result = get_CURL($urlLatestVideo);
 $latestVideoId = $result['items'][0]['id']['videoId'];
 
+// ig API
+$clientID = "9203722016396473";
+$accessToken = "IGACCyvIVmFLlBZAE4tYXNxckEyeWxnaEZAlSHcyeXIwMktLeWl1YkRYdUltY0hvQUJwZAW9FNjRSeV9BYVV1ZAzMycFBmSEw1UWR4cENYZAzlOR3dFNTN6QnhKazYxSXYwLWJwdGpLSXg5NHc3YldPNnQ0YmFqYzFPWk4xeEx6RGN4cwZDZD";
+
+$result2 = get_Curl("https://graph.instagram.com/v22.0/me?fields=username,profile_picture_url,followers_count&access_token=$accessToken");
+
+$usernameIG = $result2['username'];
+$profilePictureIG = $result2['profile_picture_url'];
+$followersIG = $result2['followers_count'];
+
+// media ig
+$resultGambar1 = get_Curl("https://graph.instagram.com/v22.0/17994840023800397?fields=media_url&access_token=$accessToken");
+$resultGambar2 = get_Curl("https://graph.instagram.com/v22.0/18124699732400843?fields=media_url&access_token=$accessToken");
+$resultGambar3 = get_Curl("https://graph.instagram.com/v22.0/18062119580277860?fields=media_url&access_token=$accessToken");
+$resultGambar4 = get_Curl("https://graph.instagram.com/v22.0/18065150363088618?fields=media_url&access_token=$accessToken");
+$resultGambar5 = get_Curl("https://graph.instagram.com/v22.0/18508331911017916?fields=media_url&access_token=$accessToken");
+$resultGambar6 = get_Curl("https://graph.instagram.com/v22.0/18102822721532713?fields=media_url&access_token=$accessToken");
+
+$gambar1 = $resultGambar1['media_url'];
+$gambar2 = $resultGambar2['media_url'];
+$gambar3 = $resultGambar3 ['media_url'];
+$gambar4 = $resultGambar4 ['media_url'];
+$gambar5 = $resultGambar5 ['media_url'];
+$gambar6 = $resultGambar6 ['media_url'];
 
 ?>
 <!doctype html>
@@ -68,7 +92,7 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
     <div class="jumbotron" id="home">
       <div class="container">
         <div class="text-center">
-          <img src="img/profile1.png" class="rounded-circle img-thumbnail">
+          <img src="img/salsa.jpg" class="rounded-circle img-thumbnail">
           <h1 class="display-4">Salsabila Putri</h1>
           <h3 class="lead">IT Student</h3>
         </div>
@@ -131,25 +155,34 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
             <div class="col-md-5">
               <div class="row">
                 <div class="col-md-4">
-                  <img src="img/profile1.png" width="200" class="rounded-circle 
+                  <img src="<?= $profilePictureIG; ?>" width="200" class="rounded-circle 
                   img-thumbnail">
                 </div>
                 <div class="col-md-8">
-                  <h5>@salsabilaputri00_</h5>
-                  <p>2 Followers</p>
+                  <h5><?= $usernameIG ?></h5>
+                  <p><?= $followersIG ?> Followers</p>
                 </div>
               </div>
 
               <div class="row mt-3 pb-3">
                 <div class="col">
                   <div class="ig-thumbnail">
-                    <img src="img/thumbs/1.png">
+                    <img src="<?= $gambar1; ?>">
                   </div>
                   <div class="ig-thumbnail">
-                    <img src="img/thumbs/2.png">
+                    <img src="<?= $gambar2; ?>">
                   </div>
                   <div class="ig-thumbnail">
-                    <img src="img/thumbs/3.png">
+                    <img src="<?= $gambar3; ?>">
+                  </div>
+                  <div class="ig-thumbnail">
+                    <img src="<?= $gambar4; ?>">
+                  </div>
+                  <div class="ig-thumbnail">
+                    <img src="<?= $gambar5; ?>">
+                  </div>
+                  <div class="ig-thumbnail">
+                    <img src="<?= $gambar6; ?>">
                   </div>
                 </div>
               </div>
@@ -248,9 +281,9 @@ $latestVideoId = $result['items'][0]['id']['videoId'];
             
             <ul class="list-group mb-4">
               <li class="list-group-item"><h3>Location</h3></li>
-              <li class="list-group-item">My Office</li>
-              <li class="list-group-item">Jl. Setiabudhi No. 193, Bandung</li>
-              <li class="list-group-item">West Java, Indonesia</li>
+              <li class="list-group-item">My Home</li>
+              <li class="list-group-item">Komplek Wahana Kuranjia</li>
+              <li class="list-group-item">Padang, Indonesia</li>
             </ul>
           </div>
 
